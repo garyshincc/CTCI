@@ -16,6 +16,7 @@ bool ransom_note(vector<string> magazine, vector<string> ransom) {
         if(it == map.end()){
             map.insert(pair <string,int>(magazine[i],1));
         }
+	// else magazine number add
         else{
             map[magazine[i]]++;
         }
