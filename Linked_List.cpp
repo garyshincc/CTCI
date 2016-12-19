@@ -10,7 +10,14 @@ class Node
             data=d;
             next=NULL;
         }
+        ~Node();
 };
+Node::~Node(){
+	if(next != NULL){
+		delete next;
+	}
+	next = NULL;
+}
 class Solution{
     public:
    	Node* insert(Node *head,int data)
@@ -47,5 +54,6 @@ int main()
         head=mylist.insert(head,data);
     }	
 	mylist.display(head);
-		
+	delete head;
+	return 0;
 }
