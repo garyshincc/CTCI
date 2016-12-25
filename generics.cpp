@@ -5,9 +5,9 @@ using namespace std;
 
 template<typename Element>
 
-void printArray(vector<Element> arr) {
-    for (int i = 0; i < arr.size(); i++)
-        cout << arr[i] << endl;
+void printArray(vector<Element> list) {
+    for (int i = 0; i < list.size(); i++)
+        cout << list[i] << endl;
 }
 
 int main() {
